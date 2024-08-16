@@ -1,0 +1,29 @@
+.segmented-container {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .segment {
+    padding: 10px 20px;
+    cursor: pointer;
+    user-select: none;
+    flex: 1;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .segment:not(:last-child) {
+    border-right: 1px solid #ccc;
+  }
+  
+  .segment.selected {
+    background-color: #1890ff;
+    color: white;
+  }
+  
+  .segment:hover {
+    background-color: #f0f0f0;
+  }
+  

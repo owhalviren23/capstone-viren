@@ -1,0 +1,47 @@
+.shopdetails-content {
+    display: flex;
+    margin: 30px;
+    padding: 30px;
+    background-color: #fffafa;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.shopdetails-content img {
+    width: 400px;
+    height: 300px;
+    margin-right: 40px;
+}
+
+/* Making shop details component responsive */
+
+@media (max-width: 426px) {
+    .shopdetails-content {
+        width: 500px;
+        padding: 20px;
+    }
+
+    .shopdetails-content img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 770px) {
+    .shopdetails-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .shopdetails-content img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .shopdetails-info {
+        text-align: center;
+    }
+}

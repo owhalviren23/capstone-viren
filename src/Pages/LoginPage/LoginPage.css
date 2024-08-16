@@ -1,0 +1,196 @@
+.login-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #b5d3ef;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.login-left-part {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  margin-right: 80px; 
+}
+
+.login-right-part {
+  margin-left: 80px;
+  background-color: #fffafa;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.login-right-part form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-right-part label {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.login-right-part input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login-right-part button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-right-part button:hover {
+  background-color: #0056b3;
+}
+
+.login-signup-text {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.login-signup-text a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-signup-text a:hover {
+  color: #0056b3;
+}
+
+.login-right-part {
+  background-color: #fffafa;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 50px;
+}
+
+.login-right-part form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-right-part label {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.login-right-part input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login-right-part button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-right-part button:hover {
+  background-color: #0056b3;
+}
+
+.login-signup-text {
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.login-signup-text a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-signup-text a:hover {
+  color: #0056b3;
+}
+
+/* Making login page responsive using media queries */
+
+/* Small devices or mobile phones with max-width: 426px */
+@media (max-width: 426px) {
+  .login-content {
+    padding: 10px;
+  }
+
+  .login-left-part {
+    order: -1;
+    margin-bottom: 20px;
+  }
+
+  .login-left-part img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .login-right-part {
+    padding: 20px;
+  }
+}
+
+/* Medium devices or tablets with max-width: 770px */
+@media (max-width: 770px) {
+  .login-content {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .login-left-part {
+    order: -1;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .login-left-part img {
+    max-width: 300px;
+    height: 300px;
+  }
+
+  .login-right-part {
+    padding: 25px;
+  }
+}
+
+/* Large devices or laptops with min-width: 771px */
+@media (min-width: 771px) {
+  .login-content {
+    flex-direction: row;
+    padding: 20px;
+  }
+
+  .login-left-part {
+    order: 0;
+    margin-left: 40px;
+    margin-right: 80px;
+  }
+
+  .login-left-part img {
+    max-width: 400px;
+    height: 400px;
+  }
+
+  .login-right-part {
+    padding: 30px;
+  }
+}

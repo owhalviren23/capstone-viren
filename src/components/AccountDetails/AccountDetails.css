@@ -1,0 +1,51 @@
+.accountdetails-content {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fffafa;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.accountdetails-info {
+    margin-right: 40px;
+}
+
+.accountdetails-content img {
+    padding-top: 30px;
+    width: 400px;
+    height: 300px;
+}
+
+/* Making account details component responsive */
+
+@media (max-width: 426px) {
+    .accountdetails-content {
+        width: 500px;
+        padding: 20px;
+    }
+
+    .accountdetails-content img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 770px) {
+    .accountdetails-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .accountdetails-content img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .accountdetails-info {
+        text-align: center;
+    }
+}

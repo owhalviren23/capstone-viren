@@ -1,0 +1,150 @@
+.signup-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #b5d3ef;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.signup-left-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.signup-right-part {
+  background-color: #fffafa;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 50px;
+}
+
+.signup-right-part form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-right-part label {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.signup-right-part input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.signup-right-part button {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-right-part button:hover {
+  background-color: #0056b3;
+}
+
+.signup-login-text {
+  margin-top: 5px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.signup-login-text a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signup-login-text a:hover {
+  color: #0056b3;
+}
+
+.signup-error-msg {
+  color: red;
+  font-size: 14px;
+  margin-top: -12px;
+  margin-bottom: 5px;
+}
+
+/* Making signup page responsive using media queries */
+
+/* Small devices or mobile phones with max-width: 426px */
+@media (max-width: 426px) {
+  .signup-content {
+    padding: 10px;
+  }
+
+  .signup-left-part {
+    order: -1;
+    margin-bottom: 20px;
+  }
+
+  .signup-left-part img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .signup-right-part {
+    padding: 20px;
+    margin: 15px;
+  }
+}
+
+/* Medium devices or tablets with max-width: 770px */
+@media (max-width: 770px) {
+  .signup-content {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .signup-left-part {
+    order: -1;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .signup-left-part img {
+    max-width: 300px;
+    height: 300px;
+  }
+
+  .signup-right-part {
+    padding: 25px;
+    margin: 15px;
+  }
+}
+
+/* Large devices or laptops with min-width: 771px */
+@media (min-width: 771px) {
+  .signup-content {
+    flex-direction: row;
+    padding: 20px;
+  }
+
+  .signup-left-part {
+    order: 0;
+    margin-left: 40px;
+    margin-right: 80px;
+  }
+
+  .signup-left-part img {
+    max-width: 400px;
+    height: 400px;
+  }
+
+  .signup-right-part {
+    padding: 30px;
+  }
+}
